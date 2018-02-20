@@ -1,3 +1,12 @@
-<p>
-  login works!
-</p>
+<router-outlet></router-outlet>
+<form class="container" style="max-width:400px">
+    <div class="form-group">
+    <label>Name</label>
+    <input type="text" class="form-control" [(ngModel)]="log.name" placeholder="Name" name="name">
+    </div>
+    <div class="form-group">
+    <label>Password</label>
+    <input type="password" class="form-control" [(ngModel)]="log.password" placeholder="Password" name="password">
+    </div>
+    <button (click)="login" class="btn btn-primary">Login</button>
+    </form>
